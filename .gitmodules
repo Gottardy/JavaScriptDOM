@@ -1,0 +1,3 @@
+[submodule "workShop1-fetch"]
+	path = workShop1-fetch
+	url = https://github.com/Gottardy/workShop1-fetch.git
