@@ -1,3 +1,6 @@
 [submodule "workShop1-fetch"]
 	path = workShop1-fetch
 	url = https://github.com/Gottardy/workShop1-fetch.git
+[submodule "workShop2-lazyLoading"]
+	path = workShop2-lazyLoading
+	url = https://github.com/Gottardy/workShop2-lazyLoading.git
