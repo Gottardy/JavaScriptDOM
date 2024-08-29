@@ -4,3 +4,6 @@
 [submodule "workShop2-lazyLoading"]
 	path = workShop2-lazyLoading
 	url = https://github.com/Gottardy/workShop2-lazyLoading.git
+[submodule "workShop3-posts"]
+	path = workShop3-posts
+	url = https://github.com/Gottardy/workShop3-posts.git
