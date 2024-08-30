@@ -2,6 +2,8 @@ const taskForm = document.getElementById("task-form")
 const taskList = document.getElementById("task-list")
 const themeToggle = document.getElementById("theme-toggle")
 
+loadTasks()
+
 taskForm.addEventListener("submit", (event)=>{
     event.preventDefault()
 
@@ -11,6 +13,7 @@ taskForm.addEventListener("submit", (event)=>{
 
     if(valueElementTask) {
         taskList.append(createTaskElement(valueElementTask))
+        storeTaskLocalStorage(valueElementTask)
         inputElementTask.value = ''
       }
 
@@ -53,4 +56,17 @@ function editTask(taskItem) {
         taskItem.firstChild.textContent = newTask
     }
     
+}
+
+function storeTaskLocalStorage(task) {
+    const tasks = JSON.parse(localStorage.getItem("tasks") || "[]")
+    tasks.push(task)
+    localStorage.setItem("tasks",JSON.stringify(tasks))
+}
+
+function loadTasks(){
+    const tasks = JSON.parse(localStorage.getItem("tasks") || "[]")
+    tasks.forEach((task)=>{
+        taskList.appendChild(createTaskElement(task))
+    })
 }
