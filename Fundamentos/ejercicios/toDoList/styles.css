@@ -1,52 +1,62 @@
+/* Estilos generales para el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    padding: 10px;
-    margin: 0;
-  }
-  
-  #task-manager {
-    background: #fff;
-    padding: 20px;
-    margin: auto;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  #task-form {
-    margin-bottom: 20px;
-  }
-  
-  #task-input {
-    padding: 10px;
-    width: 70%;
-    margin-right: 10px;
-  }
-  
-  #task-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  #task-list li {
-    background: #eee;
-    padding: 10px;
-    margin-bottom: 5px;
-    border-radius: 5px;
-  }
-  
-  /* Dark theme styles */
-  body.dark-theme {
-    background-color: #333;
-    color: #fff;
-  }
-  
-  .dark-theme #task-manager {
-    background: #222;
-    color: #fff;
-  }
-  
-  .dark-theme #task-list li {
-    background: #444;
-  }
+    font-family: Arial, sans-serif; /* Establece la fuente principal */
+    background-color: #f4f4f4; /* Color de fondo gris claro */
+    padding: 10px; /* Espaciado interno */
+    margin: 0; /* Elimina el margen predeterminado */
+}
+
+/* Estilos para el contenedor principal del administrador de tareas */
+#task-manager {
+    background: #fff; /* Fondo blanco */
+    padding: 20px; /* Espaciado interno */
+    margin: auto; /* Centra el contenedor */
+    width: 80%; /* Ancho del 80% del contenedor padre */
+    max-width: 600px; /* Ancho máximo de 600px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilos para el formulario de tareas */
+#task-form {
+    margin-bottom: 20px; /* Espacio inferior */
+}
+
+/* Estilos para el campo de entrada de tareas */
+#task-input {
+    padding: 10px; /* Espaciado interno */
+    width: 70%; /* Ancho del 70% */
+    margin-right: 10px; /* Margen derecho */
+}
+
+/* Estilos para la lista de tareas */
+#task-list {
+    list-style-type: none; /* Elimina los marcadores de lista */
+    padding: 0; /* Elimina el relleno predeterminado */
+}
+
+/* Estilos para cada elemento de la lista de tareas */
+#task-list li {
+    background: #eee; /* Fondo gris claro */
+    padding: 10px; /* Espaciado interno */
+    margin-bottom: 5px; /* Espacio inferior entre elementos */
+    border-radius: 5px; /* Bordes redondeados */
+}
+
+/* Estilos para el tema oscuro */
+
+/* Cambios en el cuerpo cuando se activa el tema oscuro */
+body.dark-theme {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Cambios en el contenedor principal en tema oscuro */
+.dark-theme #task-manager {
+    background: #222; /* Fondo más oscuro */
+    color: #fff; /* Texto blanco */
+}
+
+/* Cambios en los elementos de la lista en tema oscuro */
+.dark-theme #task-list li {
+    background: #444; /* Fondo gris oscuro para los elementos */
+}
