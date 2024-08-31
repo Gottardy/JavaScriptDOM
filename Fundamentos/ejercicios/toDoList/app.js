@@ -1,6 +1,7 @@
 const taskForm = document.getElementById("task-form")
 const taskList = document.getElementById("task-list")
-const themeToggle = document.getElementById("theme-toggle")
+const themeToggleButton = document.getElementById("theme-toggle")
+const currentTheme = localStorage.getItem("theme")
 
 loadTasks()
 
@@ -79,4 +80,15 @@ function updateTaskLocalStorage() {
     .map((li)=> li.firstChild.textContent)
     console.log(tasks)
     localStorage.setItem("tasks",JSON.stringify(tasks))    
+}
+
+themeToggleButton.addEventListener("click", (event)=>{
+    document.body.classList.toggle("dark-theme")
+     const theme = document.body.classList.contains("dark-theme") ? "dark" : "light"
+     localStorage.setItem("theme",theme)
+})
+
+if(currentTheme === "dark"){
+    console.log(currentTheme)
+    document.body.classList.add("dark-theme")
 }
